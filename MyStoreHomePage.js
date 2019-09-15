@@ -197,7 +197,7 @@ this.AddressDetails = function(strCompany,strAddress,strCity,strState,strPostNum
                                             
     }
                     
-    module.exports = new MyStoreHomePage();
+    module.exports = new MyStorehomepage();
     
              
     
