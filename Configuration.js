@@ -85,7 +85,11 @@ exports.config = {
 	seleniumAddress: 'http://localhost:4444/wd/hub',
 
 	specs: [ 
-  
+		'TC01_To_OpenEcommerceURL.js',
+		'TC02_To_CreateNewAccount.js',
+		'TC03_To_SearchIteam.js',
+		'TC04_To_AddIteam to Cart.js',
+		'TC05_To_Place the Order.js'	
 	],
 
 	 
