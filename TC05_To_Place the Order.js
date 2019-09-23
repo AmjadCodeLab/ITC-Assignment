@@ -1,5 +1,5 @@
-var ECommerce = require('\.MyStoreHomePage.js');
-var Test = require('\.TestData.json');
+var ECommerce = require('./MyStoreHomePage.js');
+var Test = require('./TestData.json');
 
 describe('To Place Order', function() {
 
@@ -8,7 +8,7 @@ describe('To Place Order', function() {
     ECommerce.HomeSearch(Test.strItem);
     ECommerce.SelectIteam(Test.strItemName);
     ECommerce.AddtoCart();
-    ECommerce.ItemChekout(This.strPayment);
+    ECommerce.ItemChekout(Test.strPayment);
     });
 
     });

@@ -1,5 +1,5 @@
-var ECommerce = require('\.MyStoreHomePage.js');
-var Test = require('\.TestData.json');
+var ECommerce = require('./MyStoreHomePage.js');
+var Test = require('./TestData.json');
 Test.strURL;
 
 describe('To Open URL', function() {

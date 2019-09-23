@@ -6,7 +6,7 @@
 		4. npm install jasmine-spec-reporter --save-dev (for readable console)
 */
 var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-var jasmineReporters = require('C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\jasmine\\lib\\reporters');
+var jasmineReporters = require('jasmine-reporters');
 var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
 var numberMap = {
 	"0": "00", "1": "01", "2": "02", "3": "03", "4": "04", "5": "05", "6": "06", "7": "07", "8": "08", "9": "09", "10": "10", 
@@ -86,10 +86,10 @@ exports.config = {
 
 	specs: [ 
 		'TC01_To_OpenEcommerceURL.js',
-		'TC02_To_CreateNewAccount.js',
-		'TC03_To_SearchIteam.js',
-		'TC04_To_AddIteam to Cart.js',
-		'TC05_To_Place the Order.js'	
+		'TC02_To_SearchIteam.js',
+		/*'TC03_To_CreateNewAccount.js',
+		 'TC04_To_AddIteam to Cart.js',
+		'TC05_To_Place the Order.js'	*/
 	],
 
 	 

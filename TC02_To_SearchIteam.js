@@ -1,5 +1,5 @@
-var ECommerce = require('\.MyStoreHomePage.js');
-var Test = require('\.TestData.json');
+var ECommerce = require('./MyStoreHomePage.js');
+var Test = require('./TestData.json');
 
 describe('To Search Iteam in Home Page', function() {
 

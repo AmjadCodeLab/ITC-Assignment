@@ -6,13 +6,15 @@ var MyStorehomepage = function(){
       
     // Function or Method to Open URL
     this.OpenPage = function(strURL){
+    browser.ignoreSynchronization = true;
     browser.get(strURL);
-    expect(browser.getCurrentUr()).toContain(strURL);
+    expect(browser.getCurrentUrl()).toContain('http://automationpractice.com/index.php');
     browser.sleep(2000);
     };
     //Function To click on SignIn option
     this.SignInOption = function(){
-        var SignBtn = element(by.className("login"));
+        var SignBtn = element(by.className("header_user_info"));
+        browser.sleep(2000);
         expect(SignBtn.isDisplayed()).toBe(true);
         browser.sleep(800);
         SignBtn.click();
@@ -20,17 +22,20 @@ var MyStorehomepage = function(){
     // Function for Authentic the email id
     this.AuthenticationPage = function(strEmail){
         // Validate the Authentic Page
-        var Authintication = element(by.cssContainingText('[class="page-heading"]','Authentication'));
+        var Authintication = element(by.cssContainingText('[class="navigation_page"]','	Authentication'));
+        browser.sleep(800);
         Authintication.getText().then(function(txt){
          if(txt == "Authentication"){
              // Enter Email Address
              var EmailId = element(by.id("email_create"));
+             browser.sleep(800);
              expect(EmailId.isPresent()).toBe(true);
+             browser.sleep(800);
              EmailId.sendKeys(strEmail);
              browser.sleep(800);
              //Click Create Account Button
              element(by.xpath('//*[@class="icon-user left"]')).click();
-             browser.sleep(800);
+             browser.sleep(1000);
          }
          else{
              throw "Exception - Emailid Not Found";
@@ -38,7 +43,7 @@ var MyStorehomepage = function(){
         })
     }
     // Function to Create Account 
-    this.AccountCreation = function(){
+    this.AccountCreation = function(strTitle,strFirstName,strLastName,strEmail,strPassword,strDay,strMonth,strYear){
         //Validate the Create Page
         var CreatePage = element(by.xpath('//*[@id="noSlide"]/h1'));
         CreatePage.getText().then(function(txt){

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="To Open URL" timestamp="2019-09-23T21:47:03" hostname="localhost" time="9.934" errors="0" tests="1" skipped="0" failures="0">
+  <testcase classname="To Open URL" name="Test User can Access the URL" time="9.928">
+  </testcase>
+ </testsuite>
+ <testsuite name="To Search Iteam in Home Page" timestamp="2019-09-23T21:47:13" hostname="localhost" time="9.878" errors="0" tests="1" skipped="0" failures="0">
+  <testcase classname="To Search Iteam in Home Page" name="Test User can Search Iteam from Home Search" time="9.876">
+  </testcase>
+ </testsuite>
+</testsuites>
